@@ -15,6 +15,7 @@
             <div>
                 <img src="img/obelisco.png"  alt="logo" width="150" height="150">
             </div>
+            <div class="nav">
             <nav>
                 <ul>
                     <li>
@@ -23,8 +24,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#Nuestros Tours">
-                            Tours
+                        <a href="#nuestrosTours">
+                            Nuestros Tours
                         </a>
                     </li>
                     <li>
@@ -37,16 +38,18 @@
                             Contacto
                         </a>
                     </li>
+                    </li>
                 </ul>
             </nav>
+            </div>
+        </div>
     </Header> 
     <br>
     <main>
-    </div>
     <section>
         <div class="video_fondo">
             <video autoplay muted loop>
-                <source src="video/Video CABA.mp4" type="video/mp4"> 
+                <source src="video/Video CABA - Noche.mp4" type="video/mp4"> 
                 Tu navegador no soporta la reproducción del video
             </video>
         </div>
@@ -68,120 +71,111 @@
             </section>
         </div>
         <br>
-        <section id="Nuestros Tours" style="border:2px solid black;">
+        <section id="nuestrosTours" style="border:2px solid black;">
             <h2>Nuestros Tours</h2>
-            <div class="tours_cont">
-                <div class="grid_tours">
-                    <div class="item1">
-                        <h3>City Tour - Barrio La Boca</h3>
-                            <img src="img/Barrio La Boca.jpg"  alt="Imagen del Barrio La Boca" width="75%" height="75%">
-                    </div>
-                    <div class="item2">
-                        <h3>City Tour - Buenos Aires</h3>
-                            <img src="img/Buenos Aires city Tour.jpeg"  alt="Imagen de la Flor - Buenos Aires" width="75%" height="75%">
-                    </div>
-                    <div class="item3">
-                        <h3>Tour Cementerio de la Recoleta</h3>
-                            <img src="img/Cementerio de la Recoleta.jpg"  alt="Imagen Cementerio de la Recoleta - Buenos Aires" width="75%" height="75%">
-                    </div>
-                    <div class="item4">
-                        <h3>Tour Gastronómico San Telmo</h3>
-                            <img src="img/Mercado de San Telmo.jpg"  alt="Imagen Mercado de San Telmo - Buenos Aires" width="75%" height="75%">
-                    </div>
-                    <div class="item5">
-                        <h3>Buenos Aires Nocturna - Show de Tango</h3>
-                            <img src="img/Tango.jpg"  alt="Tango - Buenos Aires" width="75%" height="75%">
-                    </div>
-                    <div class="item6">
-                        <h3>Nuestra cultura - Fiesta Gaucha</h3>
-                            <img src="img/Fiesta Gaucha.jpeg"  alt="Fiesta Gaucha" width="75%" height="75%">
-                    </div>
-                    <div class="item7">
-                        <h3>Tarde de Paseo en el Tigre</h3>
-                            <img src="img/Delta - Tigre.jpg"  alt="Delta - Tigre" width="75%" height="75%">
-                    </div>
-                    <div class="item8">
-                        <h3>Visita Museo de Tigre</h3>
-                            <img src="img/Museo Tigre.jpg"  alt="Museo de Tigre" width="75%" height="75%">
-                        </div>
-                    <div class="item9">
-                        <h3>Visita Museo de River</h3>
-                            <img src="img/Museo River.jpeg"  alt="Museo de River" width="75%" height="75%">
-                    </div>
+        </section>
+        <br>
+        <section id="Preguntas Frecuentes" style="border:2px solid black;">
+            <div class="contenedor-acordeon"></div>
+            <h2>Preguntas Frecuentes</h2>
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                <label for="btn-acordeon1">¿Cómo puedo realizar una compra?</label></h3>
+                <div class="contenido-acordeon">
+                    <p>Haz click en el botón "Descripción" del tour seleccionado para poder obtener más detalle del mismo y/o agregue al carrito y haga click en la opción "Comprar</p>
                 </div>
             </div>
 
-        </section>
-        <br>
-        <section>
-            <div class="comentarios_cont">
-                <h2>Comentarios</h2>
-                <div class="grid_comentarios">
-                    <div class="item1">Me encanto visitar el hermoso barrio de San Telmo, visitamos los peculiares puestos de la feria , algunos negocios tipicos pero lo que mas nos gusto fue el mercado de comidas y antiguedades, La pasamos genial , la guia muy amable y simpática respondio todas nuestras preguntas y nos recomendo que probar de rico.</div>
-                    <div class="item2">Muy buena visita al Cementerio de la Recoleta. Había ido hace tiempo por mi cuenta pero esta vez decidí ir con guía para conocer mejor la historia, visitar los mausoleos más importantes y fundamentalmente, no perderme. Lo recomiendo!</div>
-                    <div class="item3">Excenlente excursion.
-                        Sobre el guia.... increible lo que sabe sobre la historia de River.
-                        Super recomendable.
-                        Volveria otra vez</div>
-                    <div class="item4">Juan Manuel estaba bien informado y flexible con nuestras paradas. Me enseñó muchos datos interesantes sobre la historia argentina, el tango y el arte de la ciudad. Recomiendo absolutamente este tour y Juan como su Guía!
-                        Sin dudas uno de los imperdibles de Buenos Aires</div>
-                    <div class="item5">Un lugar colorido, lleno de tiendas de souvenir, shows de tangos gratuitos, muchos restaurantes con precios accesibles, un lugar imperdible en una visita en Buenos Aires</div>
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                <label for="btn-acordeon2">¿Esta incluido el transporte? ¿Cómo funciona?</label></h3>
+                <div class="contenido-acordeon">
+                    <p>El transporte esta incluido en el precio. Al realizar la compra, es importante que usted deje asentados correctamente sus datos personales, su teléfono celular y dirección del correo electrónico, de esta manera la agencia se comunicara con usted para pactar el horario en el que el transporte lo pasara a buscar por el hotel en el que se encuentra hospedado. En el caso de demorarse y no poder asistir, por favor, notifique con anticipación al guía. El tiempo que el chofer lo puede esperar, no puede superar los 15 minutos de demora, ya que seguramente el transporte debe pasar a buscar otros pasajeros, sea respetuoso con el tiempo suyo y con el de los demas.</p>
                 </div>
             </div>
-        </section>
-        <br>
-        <section id="Contacto">
-            <br>
-            <div class="grid_contacto">
-                <div class="contacto_container"> 
-                    <h2>
-                        Donde estamos
-                    </h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.0562972841312!2d-58.38860833197157!3d-34.60424009536055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb8863b2ff21%3A0xc886a0c5825d0f31!2sOlympo%20Sky%20Bar!5e0!3m2!1ses!2sar!4v1731727678861!5m2!1ses!2sar" width="750" height="450" frameborder="0"> El mapa no puede visualizarse correctamente</iframe>
-                        <h2>
-                            Formulario de Contacto
-                        </h2>
-                        <form>
-                            <label for="nombre:">Nombre: </label><br>
-                            <input placeholder="Ingrese su nombre" size="60" text name="Nombre" id="nombre">
-                            <br>
-                            <label for="apellido:">Apellido: </label><br>
-                            <input placeholder="Ingrese su apellido" size="60" type="text" name="apellido" id="apellido">
-                            <br>
-                            <label for="e-mail:">E-mail: </label><br>
-                            <input placeholder="Ingrese su correo electrónico" size="60" type="email" name="e-mail" id="e-mail">
-                            <br>
-                            <label for="Teléfono">Teléfono:</label><br>
-                            <input placeholder="Ingrese su teléfono" size="60" type="text" name="teléfono" id="Teléfono">
-                            <br>
-                            <label for="consultas/sugerencias: "> Consultas / Sugerencias:</label><br>
-                            <textarea placeholder="Ingrese su comentario o sugerencia" rows="50" cols="60" name="consultas/sugerencias" id="consultas/sugerencias"></textarea>
-                            <br>
-                            <input type="submit" value="Enviar">
-                        </form>
+
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                <label for="btn-acordeon3">¿Cuáles son los medios de pago disponibles para efectuar una compra?</label></h3>
+                <div class="contenido-acordeon">
+                    <p>Las compras podrán abonarse en efectivo, tarjeta de débito/crédito, depósito o transferencia bancaria ya sea de forma online o en nuestra oficina en el Centro de la Ciudad (Av. Corrientes 1464 - CABA - Horario 08:00 - 17:00 HS). Luego de elegir el servicio correspondiente, se te informarán las opciones para que realices el pago con tu tarjeta de crédito de forma fácil y segura.</p>
                 </div>
-            </div>         
-        </section>
+            </div>
+
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                <label for="btn-acordeon4">Acabo de finalizar una compra online , ¿tengo que ponerme en contacto para confirmar la compra?</label></h3>
+                <div class="contenido-acordeon">
+                    <p>No, no es necesario. Tras haber ingresado tus datos, nuestro sistema te mostrará una página de proceso y/o confirmación de pago, y a los minutos recibirás un mail con la información de su solicitud y el contacto del guía. Por favor, espere el contacto de la empresa con usted. 
+
+                    </p>
+                </div>
+            </div>
+
+        <section id="Contacto" style="border: 2px solid black">
+            <div class="container_contacto_flex" style="border: 2px solid black;">
+                <section style="border: 2px solid black">
+                    <div class="item_ubicacion">
+                        <h3>
+                        Donde estamos
+                        </h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.0562972841312!2d-58.38860833197157!3d-34.60424009536055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb8863b2ff21%3A0xc886a0c5825d0f31!2sOlympo%20Sky%20Bar!5e0!3m2!1ses!2sar!4v1731727678861!5m2!1ses!2sar" width="auto" height="auto" frameborder="0">
+                            El mapa no puede visualizarse correctamente
+                        </iframe>
+                    </div>
+                </section>
+
+                    <section style="border: 2px solid black;">
+                        <div class="item_formulario"> 
+                            <h3>
+                                Formulario de Contacto
+                            </h3>
+                            <form action="https://formspree.io/f/meoqzblj" method="POST">
+                                <label for="nombre:">Nombre: </label><br>
+                                <input placeholder="Ingrese su nombre" size="60" text name="Nombre" id="nombre">
+                                <br>
+                                <label for="apellido:">Apellido: </label><br>
+                                <input placeholder="Ingrese su apellido" size="60" type="text" name="apellido" id="apellido">
+                                <br>
+                                <label for="e-mail:">E-mail: </label><br>
+                                <input placeholder="Ingrese su correo electrónico" size="60" type="email" name="e-mail" id="e-mail">
+                                <br>
+                                <label for="Teléfono">Teléfono:</label><br>
+                                <input placeholder="Ingrese su teléfono" size="60" type="text" name="teléfono" id="Teléfono">
+                                <br>
+                                <label for="consultas/sugerencias: "> Consultas / Sugerencias:</label><br>
+                                <textarea placeholder="Ingrese su comentario o sugerencia" rows="40" cols="50" name="consultas/sugerencias" id="consultas/sugerencias"></textarea>
+                                <br> 
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </div>    
+                    </section>
+            </div>
     </main>
     <br>
     </main>
 
     <br>
     <footer> 
-        <nav>
-            <ul>
-                <span>
-                    <img src="img/instagram.png" alt="Logo de Instagram" width="50" height="50";>
-                </span>
-                <span>
-                    <img src="img/linkedin.svg" alt="Logo de Linkedin" width="50" height="50">
-                </span>
-                <span>
-                    <img src="img/whatsapp.svg" alt="Logo de Whatsapp" width="50" height="50">
-                </span>
-            </ul>
-            Obelisco Tours - Copyright © 2024 Todos los derechos reservados. | Empresa de viajes y turismo (EVT) Leg.14622 Disposición 0002/11
-        </nav>
+        <div class="grid_logos_redes" style="border: 2px solid black;">
+            <nav>
+                <ul>
+                    <span>
+                        <img src="img/instagram.png" alt="Logo de Instagram" width="50" height="50";>
+                    </span>
+                    <span>
+                        <img src="img/linkedin.svg" alt="Logo de Linkedin" width="50" height="50">
+                    </span>
+                    <span>
+                        <img src="img/whatsapp.svg" alt="Logo de Whatsapp" width="50" height="50">
+                    </span>
+                </ul>
+                Obelisco Tours - Copyright © 2024 Todos los derechos reservados. | Empresa de viajes y turismo 
+            </nav>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
+

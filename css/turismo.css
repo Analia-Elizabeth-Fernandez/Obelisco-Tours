@@ -21,13 +21,18 @@ header{
 
 /* Nav */
 
+nav{
+    margin: 1.5rem;
+}
+
 li {
     display: inline;
-    margin: 0.5rem
+    margin: 0.8rem
 }
 
 ul {
     list-style-type: none;
+
 }
 
 a {
@@ -50,19 +55,19 @@ section{
 
 .video_fondo {
     text-align: center;
-    width: auto;
+    width: -webkit-fill-available;
     height: 100%;
 }
 
 /* Main */
 
 main{
-    border: 1px solid gold;
+    border: 1px solid black;
     padding: 1%;
 }
 
 section{
-    border: 1px solid gold;
+    border: 1px solid black;
     margin: 1%;
     border-radius: 4px;
 }
@@ -85,85 +90,20 @@ textarea {
     font-size: clamp(1rem, 3vw, 2rem)
 }
 
-/* Nuestros Tours */
 
-.grid_tours {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    grid-template-areas: 
-    'item1 item2 item3'
-    'item4 item5 item6'
-    'item7 item8 item9';
+/* Sección Contacto */
+
+.item_ubicacion{
+    max-height: 100vh;
+    width: 100%;
 }
 
-.tours_cont { 
-    text-align: center;
-}
-
-.grid_tours > div {
-    border: 1px solid green;
-    padding: 0.5%;
-}
-
-.item1{
-    grid-area: item1;
-}
-
-.item2{
-    grid-area: item2;
-}
-
-.item3{
-    grid-area: item3;
-}
-
-.item4{
-    grid-area: item4;
-}
-
-.item5{
-    grid-area: item5;
-}
-
-.item6{
-    grid-area: item6;
-}
-
-.item7{
-    grid-area: item7;
-}
-
-.item8{
-    grid-area: item8;
-}
-
-.item9{
-    grid-area: item9;
-}
-
-/* Contacto */
-
-.grid_contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    grid-template-areas: 
-    'item1 item2'
-    'item1 item2';
-}
-
-.contacto_container {
-    text-align:center;
-}
-
-
-.item1{
-    grid-area: item1;
-}
-
-.item2{
-    grid-area: item2;
+.container_contacto_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center ;
+    gap: 10px
 }
 
 /* Comentarios*/
@@ -207,6 +147,57 @@ textarea {
     grid-area: item5;
 }
 
+/* Estilos de Preguntas Frecuentes*/
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40%;
+    margin-bottom: 35px;
+}
+.acordeon{
+    background: darkslategray;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: auto;
+    background: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: #2e2e2e;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .contenedor-acordeon{
+        width: 90%;
+}
+}
+
 /* Medias Queries - Comentarios*/
 
 @media (240px < width <= 1080px) {
@@ -224,27 +215,6 @@ textarea {
     }
 }
 
-/* Medias Queries - Tours*/
-
-@media (240px < width <= 1080px) {
-    body {
-        background-color: gray;
-    }
-    .grid_tours {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        'item1'
-        'item2'
-        'item3'
-        'item4'
-        'item5'
-        'item6'
-        'item7'
-        'item8'
-        'item9';
-    }
-}
-
 /* Medias Queries - Contacto*/
 @media (240px < width <= 1080px) {
     body {
@@ -257,6 +227,21 @@ textarea {
         'item2';
     }
 }
+
+/* Medias Queries - Footer*/
+@media (240px < width <= 1080px) {
+    body {
+        background-color: gray;
+    }
+    .grid_logos_redes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'item1'
+        'item2'
+        'item 3';
+    }
+}
+
 /* Footer */
 
 footer{
@@ -264,3 +249,31 @@ footer{
     background-color:cadetblue;
 }
 
+/* Nuestros Tours - Con JS */
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #1c1c1c;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.card {
+    border: 1px solid cadetblue;
+    border-radius: 24px;
+    min-width: 300px;
+    flex: 1;
+    padding: 1rem;
+}
+
+.description {
+    display: none;
+    border: 1px solid cadetblue;
+    background-color:  darkslategrey;
+    color: white;
+    border-radius: 24px;
+    padding: 1rem;
+}
